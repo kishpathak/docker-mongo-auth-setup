@@ -35,7 +35,7 @@ Step3: Editing Commands for creating Credentials in set_mongo_password.sh file
 	Open set_mongo_password.sh file using command :- "nano set_mongo_password.sh" 
 	Change Required component in set_mongo_password.sh:- 
 
---with set_mongo_password.sh
+- with set_mongo_password.sh
 	{
 		# Admin User
 		MONGODB_ADMIN_USER=${MONGODB_ADMIN_USER:-"admin_username"}
