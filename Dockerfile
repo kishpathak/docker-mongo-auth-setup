@@ -1,6 +1,6 @@
 FROM mongo
 
-MAINTAINER <Aashrey Sharma> aashreysh@gmail.com
+MAINTAINER <Keshav Kishlay> keshavkishlay@gmail.com
 
 // Auth Configuration. Modify as needed. 
 // These environment variables can also be specified through command line or docker-compose configuration
