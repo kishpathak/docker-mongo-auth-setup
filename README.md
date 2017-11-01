@@ -12,6 +12,7 @@ Step2: Editing Commands for Authorization configuration in Docker file
 	Change Required Component in Dockerfile:-
 
 - with Dockerfile
+  ```
 	{
 		FROM mongo	
 			
@@ -30,12 +31,14 @@ Step2: Editing Commands for Authorization configuration in Docker file
 			RUN chmod +x /set_mongodb_password.sh
 			CMD ["/run.sh"]
 	}
+  ```
 
 Step3: Editing Commands for creating Credentials in set_mongo_password.sh file
 	Open set_mongo_password.sh file using command :- "nano set_mongo_password.sh" 
 	Change Required component in set_mongo_password.sh:- 
 
 - with set_mongo_password.sh
+  ```
 	{
 		# Admin User
 		MONGODB_ADMIN_USER=${MONGODB_ADMIN_USER:-"admin_username"}
@@ -75,6 +78,7 @@ Step3: Editing Commands for creating Credentials in set_mongo_password.sh file
 		touch /data/db/.mongodb_password_set
 		echo "MongoDB configured successfully. You may now connect to the DB."
 	}
+  ```
 
 Step4: Building docker image and 
 	Build image with the command :- "docker build -t docker_image_name ." //Docker_image_name is your image name
