@@ -11,7 +11,7 @@ Step2: Editing Commands for Authorization configuration in Docker file
 	Open Dockerfile using command :- "nano docker_fileName(In Downloaded folder its namely Dockerfile)"
 	Change Required Component in Dockerfile:-
 
-- with Dockerfile
+- In Dockerfile
   ```
 	{
 		FROM mongo	
@@ -37,7 +37,7 @@ Step3: Editing Commands for creating Credentials in set_mongo_password.sh file
 	Open set_mongo_password.sh file using command :- "nano set_mongo_password.sh" 
 	Change Required component in set_mongo_password.sh:- 
 
-- with set_mongo_password.sh
+- In set_mongo_password.sh
   ```
 	{
 		# Admin User
