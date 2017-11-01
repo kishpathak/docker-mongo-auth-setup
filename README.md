@@ -1,14 +1,19 @@
 This blog will guide you how to setup Mongo DB with Authentication using Docker. So the data will be protected after exposing the db over network also and anyone can access the database from any where over internet with valid credentials.
 
 Pre Requisites :- 
-	1. You should having Docker installed in system where you are going to install Mongo DB 
-	2. Download the Mongo DB setup file for docker from :- ""
+
+	1. You should having Docker installed in system where you are going to install Mongo DB
+	
+	2. Download the Mongo DB setup file for docker from :- "https://github.com/kishpathak/docker-mongo-auth-setup.git"
+	
 	3. Open terminal verify once that your system has Docker install :- "docker -v"
 
 Step1: Using terminal open downloaded folder "docker-mongo-auth" using command :- cd docker-mongo-auth
 
 Step2: Editing Commands for Authorization configuration in Docker file
+
 	Open Dockerfile using command :- "nano docker_fileName(In Downloaded folder its namely Dockerfile)"
+	
 	Change Required Component in Dockerfile:-
 
 - In Dockerfile
@@ -34,7 +39,9 @@ Step2: Editing Commands for Authorization configuration in Docker file
   ```
 
 Step3: Editing Commands for creating Credentials in set_mongo_password.sh file
+
 	Open set_mongo_password.sh file using command :- "nano set_mongo_password.sh" 
+	
 	Change Required component in set_mongo_password.sh:- 
 
 - In set_mongo_password.sh
