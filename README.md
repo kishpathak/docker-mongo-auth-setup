@@ -80,10 +80,16 @@ Step3: Editing Commands for creating Credentials in set_mongo_password.sh file
 	}
   ```
 
-Step4: Building docker image and 
+Step4: Building docker image
+
 	Build image with the command :- "docker build -t docker_image_name ." //Docker_image_name is your image name
+	
 	Check that your docker image is created or not with the command :- "docker images" //You will get all images
+	
 	Run the images with command :- "docker run -d -p PORT_EXPOSED:27017 docker_image_name"
+	
 	Check your docker is running with the command :- "docker ps" //You will get all docker running image list 
 
 Step5: Now connect from you mongoclient and check the connection via providing proper credentials.
+
+Still facing problem write me an email keshavkishlay@gmail.com
